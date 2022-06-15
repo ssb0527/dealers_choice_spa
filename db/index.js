@@ -31,7 +31,7 @@ const Commenter = conn.define('commenter', {
     fullName: {
         type: VIRTUAL,
         get: function() {
-            return `${this.firstName} ${this.lastName}`
+            return `${this.fisrtName} ${this.lastName}`
         }
     }
 });

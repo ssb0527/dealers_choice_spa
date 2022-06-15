@@ -9,6 +9,11 @@ app.use('/api', require('./api'));
 app.use('/dist', express.static('dist'));
 app.use('/public', express.static('public'));
 
+app.use((e, req, res, next) => {
+    console.loge(e);
+    res.status(500).send(e);
+});
+
 app.get('/', (req, res, next) => res.sendFile(path.join(__dirname, 'index.html')));
 
 const init = async() => {
