@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+}
+
+body {
+    background-color: rgb(141, 141, 197);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+h1 {
+    font-family: 'Permanent Marker', cursive;
+}
+
+.selected a {
+    background-color: lavender;
+}
+
+#brands-and-takeaways {
+    display: flex;
+}
+
+#brands-and-takeaways div {
+    flex: 0 0 50%;
+}
